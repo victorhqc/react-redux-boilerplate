@@ -1,5 +1,4 @@
 require('roboto-fontface/css/roboto-fontface.css');
-require('./styles/style.css');
 
 // React dependencies
 import React from 'react';

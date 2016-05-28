@@ -5,7 +5,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { browserHistory } from 'react-router';
 import { routerMiddleware } from 'react-router-redux';
 import { rootReducer } from '../reducers';
-import DevTools from '../containers/DevTools';
+import DevTools from '../components/core/DevTools';
 
 const loggerMiddleware = createLogger();
 const historyMiddleware = routerMiddleware(browserHistory);
