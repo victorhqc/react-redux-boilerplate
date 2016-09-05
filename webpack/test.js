@@ -8,24 +8,24 @@ const apiPath = path.join(__dirname, '/../api');
 
 const config = _.merge({
     entry: './src/index.js',
-    cache: false,
+    cache: true,
+    devServer: {
+        hot: true,
+    },
     plugins: [
-        new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.UglifyJsPlugin(),
-        new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.optimize.AggressiveMergingPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
     ],
 }, baseConfig);
 
 config.resolve.alias = {
-    api: path.join(`${apiPath}/production.js`),
+    api: path.join(`${apiPath}/local.js`),
 };
 
 config.module.loaders.push({
     test: /\.jsx?$/,
     exclude: [/node_modules/, /bower_components/],
-    loader: 'babel',
+    loader: 'babel-loader',
     query: {
         presets: ['react', 'es2015'],
     },
