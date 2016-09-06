@@ -5,7 +5,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import DevTools from './DevTools';
 
-/* eslint-disable react/prefer-stateless-function */
 export default class Root extends Component {
 
     render() {

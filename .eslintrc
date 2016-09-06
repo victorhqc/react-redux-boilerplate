@@ -4,14 +4,14 @@
         "max-len": ["error", 120],
         "indent": ["error", 4],
         "react/jsx-indent": [2, 4],
-        "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}]
+        "import/no-extraneous-dependencies": [0, {}],
+        "import/no-unresolved": [0, {}],
+        "react/prop-types": [0, {"ignore": [], "customValidators": []}],
+        "react/prefer-stateless-function": [0, {"ignorePureComponents": false}]
     },
     "env": {
         "browser": true,
         "node": true,
         "jasmine": true
     },
-    "settings": {
-        "import/resolver": webpack
-    }
 }
