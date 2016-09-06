@@ -1,5 +1,5 @@
-if (process.env.NODE_ENV === 'production') {
-  module.exports = require('./Root.production');
-} else {
-  module.exports = require('./Root.development');
-}
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import/no-unresolved */
+import { alias } from 'api';
+
+module.exports = require(`./Root.${alias}`);

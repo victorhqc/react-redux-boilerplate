@@ -11,4 +11,7 @@
         "node": true,
         "jasmine": true
     },
+    "settings": {
+        "import/resolver": webpack
+    }
 }

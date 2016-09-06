@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+/* eslint-disable react/prefer-stateless-function */
 export default class Root extends Component {
 
     render() {
