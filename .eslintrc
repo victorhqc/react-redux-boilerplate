@@ -14,4 +14,9 @@
         "node": true,
         "jasmine": true
     },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    }
 }

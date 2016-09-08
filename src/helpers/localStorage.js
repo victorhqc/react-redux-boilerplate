@@ -10,6 +10,9 @@ export const loadState = () => {
 };
 
 export const saveState = (state) => {
+    /* eslint-disable no-unused-vars */
+    const { routing, ...cleanState } = state;
+
     try {
         const serializedState = JSON.stringify(state);
         localStorage.setItem('state', serializedState);
